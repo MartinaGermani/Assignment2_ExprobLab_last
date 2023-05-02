@@ -1,0 +1,20 @@
+###### Motion controlling interface
+
+### Action Service Goal
+
+# The plan as a set of via points to reach
+Point[] point_set
+
+---
+
+### Action Server Result
+
+# The reached point
+Point reached_point
+
+---
+
+### Action Server Feedback
+
+# The last via_point reached
+Point reached_point
