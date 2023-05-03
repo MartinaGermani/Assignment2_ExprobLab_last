@@ -23,7 +23,7 @@ In particular, the `my_moveit node` in src folder allows to implements a predefi
 4. move back the arm
 5. stop to move
 
-By moving the arm, the robot detects the aruco markers, in particular it retrieves only codes which will be translated in informations about the environment thanks to the `marker_server node`, always in src folder. 
+By moving the arm, the robot detects the aruco markers, in particular it retrieves only codes which will be translated in informations about the environment thanks to the `marker_server node`, always in src folder, through /room_info service.
 
 ### The `reasoner` node ###
 This node implements the `reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
