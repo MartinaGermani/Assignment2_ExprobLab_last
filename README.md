@@ -37,15 +37,17 @@ This node implements the `planner` state, which is called by the Moving sub-stat
 ### The `controller` node ###
 This node implements the `controller` state, which is called through a /plan action-server request. It takes the via points generated and move the robot in the environment.
 
-### 3. Software Behaviour
+### 3. Robot
+
+### 4. Software Behaviour
 After the initial loading of the map of the environment, the robot starts to move between the locations so as to monitor the environment.
 In particular, the motion of the robot follows two different protocols, one for the mapping of the unknown environment and one for the navigating from the current location to the desired one. 
 For the mapping I used Gmapping (FastSLAM), which is a Filtering-Based approach which uses a particle filter in which each particle carries an individual map of the environment. It need the odometry data and a lasers, in fact it subscribes to the topic /scan on which the robot publishes the laser and to the topic /tf. 
 Instead, for the navigation, I used the MoveBase package of the ROS Navigation stack, which allows to select a local and a global planner. As global path planning I chose the `navfn`, which uses Dijkstra’s algorithm to find a global path with minimum cost between start point and end point. As local path planning, instead, I chose the `dwa`, which depends on the local costmap which provides obstacle information. 
 
-### 4. Commented running
+### 5. Commented running
 
-### 5. Installation and running procedure
+### 6. Installation and running procedure
 This architecture runs on ROS noetic and it has been developed with the Docker image, that you can find [here](https://hub.docker.com/repository/docker/carms84/exproblab). 
 
 For the implementation to work, it's necessary to:
@@ -68,12 +70,12 @@ Once you have all the installation required, you have to do the following steps:
 
 ```roslaunch patrol_robot run.launch```
 
-### 6. Working hypothesis and environment
+### 7. Working hypothesis and environment
 
-### 7. Limitations
+### 8. Limitations
 
 
-### 8. Author and Contact
+### 9. Author and Contact
 *Author*: **Germani Martina**
 
 *Contact*: **martina.germani99@gmail.com**
