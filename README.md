@@ -23,7 +23,10 @@ The ROS-based software architecture is composed of 6 nodes, each one available i
 
 
 ### 3. Installation and running procedure
-This architecture runs on ROS noetic and it has been developed with the Docker image: you can find [here](https://hub.docker.com/repository/docker/carms84/exproblab) the instruction. It also requires [aRMOR](https://github.com/EmaroLab/armor) and the [ArmorPy API](https://github.com/EmaroLab/armor_py_api).
+This architecture runs on ROS noetic and it has been developed with the Docker image: you can find [here](https://hub.docker.com/repository/docker/carms84/exproblab) the instruction. 
+For the implementation to work, it's necessary to:
+- install [aRMOR](https://github.com/EmaroLab/armor) and the [ArmorPy API](https://github.com/EmaroLab/armor_py_api).
+- install `smach`: `sudo apt-get install ros-noetic-smach-ros`
 Once you have all the installation required, you have to do the following steps:
 
 - ```git clone https://github.com/MartinaGermani/ExprobLab_Assignment1.git ```
