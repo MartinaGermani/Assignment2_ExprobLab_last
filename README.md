@@ -38,12 +38,13 @@ This node implements the `planner` state, which is called by the Moving sub-stat
 This node implements the `controller` state, which is called through a /plan action-server request. It takes the via points generated and move the robot in the environment.
 
 ### 3. Robot and Environment
-For the patrolling, I used a turtlebot3 robot equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
+For the patrolling, I used a `turtlebot3 robot` equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
 
-The environment, instead, is composed by:
+The environment, instead, is the same of the first assignment, so it is composed by:
 - 7 `doors` (D1, D2, D3, D4, D5, D6);
 - 5 `rooms` (E, R1, R2, R3, R4);
 - 2 `corridors` (C1, C2)
+With respect to the simple implementation of the first assignment, here the environment is 3D and it presents also structural obstacles that the robot has to avoid. Moreover there is an additional small room connected to the room E, in which the robot is spawn initially and in which it has to detect the markers in order to load the semantic map before to start the patrolling. 
 
 ### 4. Software Behaviour
 After the initial loading of the map of the environment, the robot starts to move between the locations so as to monitor the environment.
@@ -76,12 +77,11 @@ Once you have all the installation required, you have to do the following steps:
 
 ```roslaunch patrol_robot run.launch```
 
-### 7. Working hypothesis and environment
 
-### 8. Limitations
+### 7. Limitations
 
 
-### 9. Author and Contact
+### 8. Author and Contact
 *Author*: **Germani Martina**
 
 *Contact*: **martina.germani99@gmail.com**
