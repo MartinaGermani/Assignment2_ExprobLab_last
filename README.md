@@ -38,6 +38,8 @@ This node implements the `planner` state, which is called by the Moving sub-stat
 This node implements the `controller` state, which is called through a /plan action-server request. It takes the via points generated and move the robot in the environment.
 
 ### 3. Software Behaviour
+After the initial loading of the map of the environment, the robot starts to move between the locations so as to monitor the environment.
+In particular, the motion of the robot follows two different protocols, one for the mapping of the unknown environment and one for the navigating from the current location to the desired one. 
 
 ### 4. Commented running
 
