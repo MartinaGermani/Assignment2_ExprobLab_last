@@ -28,6 +28,7 @@ For the implementation to work, it's necessary to:
 - install [aRMOR](https://github.com/EmaroLab/armor) and the [ArmorPy API](https://github.com/EmaroLab/armor_py_api).
 - install `smach`: `sudo apt-get install ros-noetic-smach-ros`
 - install `MoveIt`: `sudo apt-get install ros-noetic-moveit`
+- install `xterm`: `sudo apt-get install -y xterm`
 
 Once you have all the installation required, you have to do the following steps:
 - ```git clone https://github.com/MartinaGermani/Assignment2_ExprobLab_last.git ```
