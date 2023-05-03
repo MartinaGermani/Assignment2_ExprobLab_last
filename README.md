@@ -20,3 +20,17 @@ The ROS-based software architecture is composed of 6 nodes, each one available i
 ### The `planner` node ###
 
 ### The `controller` node ###
+
+
+### 3. Installation and running procedure
+This architecture runs on ROS noetic. It also requires [aRMOR](https://github.com/EmaroLab/armor) and the [ArmorPy API](https://github.com/EmaroLab/armor_py_api).
+Once you have all the installation required, you have to do the following steps:
+
+- ```git clone https://github.com/MartinaGermani/ExprobLab_Assignment1.git ```
+- go in the `scripts/` folder and run `chmod +x *`
+- run `catkin build` in the workspace
+- once the workspace is built, open two terminals and execute the following commands:
+
+```roslaunch patrol_robot demo_assignment.launch```
+
+```roslaunch patrol_robot run.launch```
