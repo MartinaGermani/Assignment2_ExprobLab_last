@@ -30,7 +30,7 @@ For the implementation to work, it's necessary to:
 - install `MoveIt`: `sudo apt-get install ros-noetic-moveit`
 
 Once you have all the installation required, you have to do the following steps:
-- ```git clone https://github.com/MartinaGermani/ExprobLab_Assignment1.git ```
+- ```git clone https://github.com/MartinaGermani/Assignment2_ExprobLab_last.git ```
 - go in the `scripts/` folder and run `chmod +x *`
 - run `catkin build` in the workspace
 - once the workspace is built, open two terminals and execute the following commands:
