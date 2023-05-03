@@ -30,6 +30,10 @@ For the implementation to work, it's necessary to:
 - install `smach`: `sudo apt-get install ros-noetic-smach-ros`
 - install `MoveIt`: `sudo apt-get install ros-noetic-moveit`
 - install `xterm`: `sudo apt-get install -y xterm`
+- clone [aruco](https://github.com/pal-robotics/aruco_ros) package
+- clone [MoveBase Navigation](https://github.com/ros-planning/navigation) package
+- clone [SLAM gmapping](https://github.com/ros-perception/slam_gmapping) package
+
 
 Once you have all the installation required, you have to do the following steps:
 - ```git clone https://github.com/MartinaGermani/Assignment2_ExprobLab_last.git ```
