@@ -34,7 +34,7 @@ For the implementation to work, it's necessary to:
 - install `MoveIt`: `sudo apt-get install ros-noetic-moveit`
 - install `xterm`: `sudo apt-get install -y xterm`
 - clone [aruco](https://github.com/pal-robotics/aruco_ros) package
-- clone [MoveBase Navigation](https://github.com/ros-planning/navigation) package
+- clone [MoveBase Navigation](https://github.com/ros-planning/navigation) package, which is part of the ROS Navigation Stack. It allows to plan, execute and control robot's trajectories
 - clone [SLAM gmapping](https://github.com/ros-perception/slam_gmapping) package
 
 
