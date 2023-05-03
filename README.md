@@ -17,12 +17,16 @@ This node implements the `Initial State` which is called by the finite-state mac
 Initially it loads an empty ontology, whereas then all the informations about the environment are retrived from aruco markers detection by the robot which moves its arm thanks to the MoveIt control node. In this way the ontology is loaded with the corresponding room and doors.
 
 ### The `reasoner` node ###
-This node implements the `Reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response
+This node implements the `Reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
+
 ### The `battery` node ###
+This node implements the 'Battery' state. It is called by the Finite State Machine node through /recharge service request. When it is called, it starts a loading bar animation in order to simulate the recharging procedure.
 
 ### The `planner` node ###
+This node implements the `planner` state, which is called by the Moving sub-state machine through a /control action-client request. It takes the current location and the target one and generate a set of via points to connect them.
 
 ### The `controller` node ###
+This node implements the `controller` state, which is called through a /plan action-server request. It takes the via points generated and move the robot in the environment.
 
 ### 3. Software Behaviour
 
