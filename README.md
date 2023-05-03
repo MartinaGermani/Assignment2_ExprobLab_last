@@ -78,8 +78,8 @@ Once you have all the installation required, you have to do the following steps:
 ```roslaunch patrol_robot run.launch```
 
 
-### 7. Limitations
-
+### 7. Limitation and possible improvement
+The main limitation of this project is surely the fact that the recharging of the battery is simply simulated by moving the robot where the recharge is supposed to be and by waiting some time; so, a possible improvement consists of making this part more realistic.
 
 ### 8. Author and Contact
 *Author*: **Germani Martina**
