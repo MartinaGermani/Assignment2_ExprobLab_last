@@ -40,7 +40,10 @@ This node implements the `controller` state, which is called through a /plan act
 ### 3. Robot and Environment
 For the patrolling, I used a turtlebot3 robot equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
 
-The environment, instead, is composed by 7 `doors`, 5 `rooms` and 2 `corridors`. 
+The environment, instead, is composed by:
+- 7 `doors` (D1, D2, D3, D4, D5, D6);
+- 5 `rooms` (E, R1, R2, R3, R4);
+- 2 `corridors` (C1, C2)
 
 ### 4. Software Behaviour
 After the initial loading of the map of the environment, the robot starts to move between the locations so as to monitor the environment.
