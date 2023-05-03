@@ -21,8 +21,11 @@ The ROS-based software architecture is composed of 6 nodes, each one available i
 
 ### The `controller` node ###
 
+### 3. Software Behaviour
 
-### 3. Installation and running procedure
+### 4. Commented running
+
+### 5. Installation and running procedure
 This architecture runs on ROS noetic and it has been developed with the Docker image, that you can find [here](https://hub.docker.com/repository/docker/carms84/exproblab). 
 
 For the implementation to work, it's necessary to:
@@ -45,12 +48,12 @@ Once you have all the installation required, you have to do the following steps:
 
 ```roslaunch patrol_robot run.launch```
 
-### 4. Working hypothesis and environment
+### 6. Working hypothesis and environment
 
-### 5. Limitations
+### 7. Limitations
 
 
-### 6. Author and Contact
+### 8. Author and Contact
 *Author*: **Germani Martina**
 
 *Contact*: **martina.germani99@gmail.com**
