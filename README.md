@@ -35,7 +35,7 @@ For the implementation to work, it's necessary to:
 - install `xterm`: `sudo apt-get install -y xterm`
 - clone [aruco](https://github.com/pal-robotics/aruco_ros) package
 - clone [MoveBase Navigation](https://github.com/ros-planning/navigation) package, which is part of the ROS Navigation Stack. It allows to plan, execute and control robot's trajectories
-- clone [SLAM gmapping](https://github.com/ros-perception/slam_gmapping) package
+- clone [SLAM gmapping](https://github.com/ros-perception/slam_gmapping) package, which stands for Simultaneous Localization and Mapping and where gmapping is a specific SLAM algorithm which uses laser range-finder data to build the map
 
 
 Once you have all the installation required, you have to do the following steps:
