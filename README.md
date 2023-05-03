@@ -40,6 +40,8 @@ This node implements the `controller` state, which is called through a /plan act
 ### 3. Software Behaviour
 After the initial loading of the map of the environment, the robot starts to move between the locations so as to monitor the environment.
 In particular, the motion of the robot follows two different protocols, one for the mapping of the unknown environment and one for the navigating from the current location to the desired one. 
+For the mapping I used Gmapping (FastSLAM), which is a Filtering-Based approach which uses a particle filter in which each particle carries an individual map of the environment. It need the odometry data and a lasers, in fact it subscribes to the topic /scan on which the robot publishes the laser and to the topic /tf. 
+Instead, for the navigation, I used the MoveBase package of the ROS Navigation stack, which allows to select a local and a global planner. As global path planning I chose the `navfn`, which uses Dijkstra’s algorithm to find a global path with minimum cost between start point and end point. As local path planning, instead, I chose the `dwa`.
 
 ### 4. Commented running
 
