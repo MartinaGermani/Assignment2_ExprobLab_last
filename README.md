@@ -16,6 +16,13 @@ This node implements the `Finite State Machine` of the architecture which manage
 This node implements the `Initial State` which is called by the finite-state machine node. The caller happens through /start service request. 
 Initially it loads an empty ontology, whereas then all the informations about the environment are retrived from aruco markers detection by the robot which moves its arm thanks to the MoveIt control node. In this way the ontology is loaded with the corresponding room and doors.
 
+In particular, the my_moveit node in src folder allows to implements a predefined motions of the arm. In particular, I set 5 different positions that may be requested:
+1. move left the arm
+2. move to home position the arm
+3. move right the arm
+4. move back the arm
+5. stop to move
+
 ### The `reasoner` node ###
 This node implements the `Reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
 
