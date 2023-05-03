@@ -37,7 +37,8 @@ This node implements the `planner` state, which is called by the Moving sub-stat
 ### The `controller` node ###
 This node implements the `controller` state, which is called through a /plan action-server request. It takes the via points generated and move the robot in the environment.
 
-### 3. Robot
+### 3. Robot and Environment
+For the patrolling, I used a turtlebot3 robot equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
 
 ### 4. Software Behaviour
 After the initial loading of the map of the environment, the robot starts to move between the locations so as to monitor the environment.
