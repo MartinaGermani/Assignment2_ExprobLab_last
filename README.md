@@ -27,8 +27,9 @@ This architecture runs on ROS noetic and it has been developed with the Docker i
 For the implementation to work, it's necessary to:
 - install [aRMOR](https://github.com/EmaroLab/armor) and the [ArmorPy API](https://github.com/EmaroLab/armor_py_api).
 - install `smach`: `sudo apt-get install ros-noetic-smach-ros`
-Once you have all the installation required, you have to do the following steps:
+- install `MoveIt`: `sudo apt-get install ros-noetic-moveit`
 
+Once you have all the installation required, you have to do the following steps:
 - ```git clone https://github.com/MartinaGermani/ExprobLab_Assignment1.git ```
 - go in the `scripts/` folder and run `chmod +x *`
 - run `catkin build` in the workspace
