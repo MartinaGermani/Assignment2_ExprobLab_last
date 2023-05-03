@@ -26,10 +26,10 @@ In particular, the `my_moveit node` in src folder allows to implements a predefi
 By moving the arm, the robot detects the aruco markers, in particular it retrieves only codes which will be translated in informations about the environment thanks to the `marker_server node`, always in src folder. 
 
 ### The `reasoner` node ###
-This node implements the `Reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
+This node implements the `reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
 
 ### The `battery` node ###
-This node implements the 'Battery' state. It is called by the Finite State Machine node through /recharge service request. When it is called, it starts a loading bar animation in order to simulate the recharging procedure.
+This node implements the `battery` state. It is called by the Finite State Machine node through /recharge service request. When it is called, it starts a loading bar animation in order to simulate the recharging procedure.
 
 ### The `planner` node ###
 This node implements the `planner` state, which is called by the Moving sub-state machine through a /control action-client request. It takes the current location and the target one and generate a set of via points to connect them.
