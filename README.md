@@ -10,9 +10,11 @@ The ROS-based software architecture is based on the OWL-DL approach to create an
 The ROS-based software architecture is composed of 6 nodes, each one available in the `scripts/` folder. Moreover there is an `architecture_name_mapper` interface which containes all the names of the parameters, topics and services used in the architecture, and also information about the environment. 
 
 ### The `finite_state_machine` node ###
+This node implements the `Finite State Machine` of the architecture which manages the behaviour of the robot. It communicates with the other nodes using ros-services and ros-actions. The Finite State Machine is composed by a top level finite state machine and by two sub-state machines which manage the robot's motion and its battery. 
 
 ### The `initial_state` node ###
-
+This node implements the initial state which is called by the finite-state machine node. The caller happens through /start service and request. 
+Initially it loads an empty ontology, whereas then all the informations about the environment are retrived from aruco markers detection by the robot which moves its arm thanks to the MoveIt control node. In this way the ontology is loaded with the corresponding room and doors.
 ### The `reasoner` node ###
 
 ### The `battery` node ###
