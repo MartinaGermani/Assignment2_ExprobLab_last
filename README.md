@@ -44,3 +44,13 @@ Once you have all the installation required, you have to do the following steps:
 ```roslaunch patrol_robot demo_assignment.launch```
 
 ```roslaunch patrol_robot run.launch```
+
+### 4. Working hypothesis and environment
+
+### 5. Limitations
+
+
+### 6. Author and Contact
+*Author*: **Germani Martina**
+
+*Contact*: **martina.germani99@gmail.com**
