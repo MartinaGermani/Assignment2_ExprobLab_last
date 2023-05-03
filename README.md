@@ -4,8 +4,10 @@ In this repository, you can find a robotic simulation for surveillance purposes.
 
 The idea of the software architecture is that at the beginning the robot builds the "semantic" map of the environment by detecting, without moving the base of the robot, all seven markers that are present around it. Once built the map, the goal of the robot is to perform a patrolling of the environment; in particular, it has to move between different locations in order to visit them and stay there for some times, scanning around it by rotating the camera. Moreover, when its battery is low, it has to move in the recharging station in order to recharge.
 
+The ROS-based software architecture is based on the OWL-DL approach to create an ontology of the environment and it uses 'SMACH' to implement a Finite State Machine to control the robot behaviour. In particular, the ontology is visible with 'Protégé' and the architecture behaviour is based on 'ARMOR'.
+
 ## 2. Software Components
-The software is composed of 6 nodes, each one available in the `scripts/` folder. Moreover there is an `architecture_name_mapper` interface which containes all the names of the parameters, topics and services used in the architecture, and also information about the environment. 
+The ROS-based software architecture is composed of 6 nodes, each one available in the `scripts/` folder. Moreover there is an `architecture_name_mapper` interface which containes all the names of the parameters, topics and services used in the architecture, and also information about the environment. 
 
 ### The `finite_state_machine` node ###
 
