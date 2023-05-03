@@ -13,10 +13,11 @@ The ROS-based software architecture is composed of 6 nodes, each one available i
 This node implements the `Finite State Machine` of the architecture which manages the behaviour of the robot. It communicates with the other nodes using ros-services and ros-actions. The Finite State Machine is composed by a top level finite state machine and by two sub-state machines which manage the robot's motion and its battery. 
 
 ### The `initial_state` node ###
-This node implements the `Initial State` which is called by the finite-state machine node. The caller happens through /start service and request. 
+This node implements the `Initial State` which is called by the finite-state machine node. The caller happens through /start service request. 
 Initially it loads an empty ontology, whereas then all the informations about the environment are retrived from aruco markers detection by the robot which moves its arm thanks to the MoveIt control node. In this way the ontology is loaded with the corresponding room and doors.
-### The `reasoner` node ###
 
+### The `reasoner` node ###
+This node implements the `Reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response
 ### The `battery` node ###
 
 ### The `planner` node ###
