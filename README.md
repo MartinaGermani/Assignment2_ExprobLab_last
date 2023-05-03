@@ -6,3 +6,15 @@ The idea of the software architecture is that at the beginning the robot builds 
 
 ## 2. Software Components
 The software is composed of 6 nodes, each one available in the `scripts/` folder. Moreover there is an `architecture_name_mapper` interface which containes all the names of the parameters, topics and services used in the architecture, and also information about the environment. 
+
+### The `finite_state_machine` node ###
+
+### The `initial_state` node ###
+
+### The `reasoner` node ###
+
+### The `battery` node ###
+
+### The `planner` node ###
+
+### The `controller` node ###
