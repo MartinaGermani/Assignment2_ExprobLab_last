@@ -17,7 +17,7 @@ The second sub-state machine, instead, handles the recharging of the robot, in f
 
 ![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Finite_state_machine.PNG?raw=true)
 
-### The `initial_state` node ###
+### The `initial_state` node ### 
 This node implements the `Initial State` which is called by the finite-state machine node. The caller happens through /start service request. 
 Initially it loads an empty ontology, whereas then all the informations about the environment are retrived from aruco markers detection by the robot which moves its arm thanks to the MoveIt control node. In this way the ontology is loaded with the corresponding room and doors.
 
