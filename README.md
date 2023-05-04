@@ -15,8 +15,7 @@ The Finite State Machine is composed by a top level finite state machinem which 
 The sub-state machine which manages the motion of the robotm includes a state, called Pointing, in which the path is computed and another state, called Controlling, which controls the motion of the robot through the via_points of the path. 
 The second sub-state machine, instead, handles the recharging of the robot, in fact, if the robot's battery is low and it is not in the DOC-station, it has to move in it in order to start the recharge, and for doing that it's necessary to plan and navigate the robot there.  
 
-![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last
-/blob/main/images/Finite_state_machine.PNG?raw=true)
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Finite_state_machine.PNG?raw=true)
 
 ### The `initial_state` node ###
 This node implements the `Initial State` which is called by the finite-state machine node. The caller happens through /start service request. 
