@@ -11,8 +11,8 @@ The ROS-based software architecture is composed of 6 nodes, each one available i
 
 ### The `finite_state_machine` node ###
 This node implements the `Finite State Machine` of the architecture which manages the behaviour of the robot. It communicates with the other nodes using ros-services and ros-actions. 
-The Finite State Machine is composed by a top level finite state machinem which is composed by an initial state and a resoning one, and by two sub-state machines which manage the robot's motion and its battery. 
-The sub-state machine which manages the motion of the robotm includes a state, called Pointing, in which the path is computed and another state, called Controlling, which controls the motion of the robot through the via_points of the path. 
+The Finite State Machine is composed by a top level finite state machine which is composed by an initial state and a resoning one, and by two sub-state machines which manage the robot's motion and its battery. 
+The sub-state machine, which manages the motion of the robot, includes a state, called Pointing, in which the path is computed and another state, called Controlling, which controls the motion of the robot through the via_points of the path. 
 The second sub-state machine, instead, handles the recharging of the robot, in fact, if the robot's battery is low and it is not in the DOC-station, it has to move in it in order to start the recharge, and for doing that it's necessary to plan and navigate the robot there.  
 
 ![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Finite_state_machine.PNG?raw=true)
