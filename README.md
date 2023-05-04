@@ -55,7 +55,7 @@ This node implements the `controller` state, which is called through a /plan act
 ### 3. Robot and Environment
 For the patrolling, I used a `turtlebot3 robot` equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
 
-![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/robot.PNG?raw=true)
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/robot.png?raw=true)
 
 The environment, instead, is the same of the first assignment, so it is composed by:
 - 7 `doors` (D1, D2, D3, D4, D5, D6);
