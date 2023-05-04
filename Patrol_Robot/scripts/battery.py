@@ -2,7 +2,7 @@
 
 """
 
-.. module:: Battery
+.. module:: Battery 
     :platform: Ubuntu 20.04
     :synopsis: module that simulates the recharge of the battery of the robot in the DOC-station
 
