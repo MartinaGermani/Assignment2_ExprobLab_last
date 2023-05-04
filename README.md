@@ -53,7 +53,7 @@ This node implements the `controller` state, which is called through a /plan act
 ![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Controller.PNG?raw=true)
 
 ### 3. Robot and Environment
-For the patrolling, I used a `turtlebot3 robot` equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
+For the patrolling, I used a `turtlebot3 robot` equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. Initially it is spawn in the initial position x = -6.0, y = 11.0.
 
 ![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/robot.png?raw=true)
 
@@ -90,7 +90,7 @@ For the implementation to work, it's necessary to:
 - install `smach`: `sudo apt-get install ros-noetic-smach-ros`;
 - install `MoveIt`: `sudo apt-get install ros-noetic-moveit`. It is an open-source robotic manipulation platform which allows to develop complex application, to plan trajectories that the robot's joints should follow and to execute these trajectories;
 - install `xterm`: `sudo apt-get install -y xterm`;
-- clone [aruco](https://github.com/pal-robotics/aruco_ros) package, which provides real-time marker based 3D pose estimation using AR markers
+- clone [aruco](https://github.com/pal-robotics/aruco_ros) package, which provides real-time marker based 3D pose estimation using AR markers;
 - clone [MoveBase Navigation](https://github.com/ros-planning/navigation) package, which is part of the ROS Navigation Stack, and it allows to plan, execute and control robot's trajectories;
 - clone [SLAM gmapping](https://github.com/ros-perception/slam_gmapping) package, which stands for Simultaneous Localization and Mapping and where gmapping is a specific SLAM algorithm which uses laser range-finder data to build the map.
 
