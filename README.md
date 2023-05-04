@@ -32,7 +32,7 @@ By moving the arm, the robot detects the aruco markers, in particular it retriev
 
 ![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Initial State.PNG?raw=true)
 
-### The `reasoner` node ###
+### The `reasoner` node ### 
 This node implements the `reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
 
 ### The `battery` node ###
