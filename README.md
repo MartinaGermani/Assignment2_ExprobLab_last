@@ -30,19 +30,27 @@ In particular, the `my_moveit node` in src folder allows to implements a predefi
 
 By moving the arm, the robot detects the aruco markers, in particular it retrieves only codes which will be translated in informations about the environment thanks to the `marker_server node`, always in src folder, through /room_info service.
 
-![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Initial State.PNG?raw=true)
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Initial_State.PNG?raw=true)
 
 ### The `reasoner` node ### 
 This node implements the `reasoner` state. It is called by the Finite State Machine node through /reason service request. This node reasons about the next-location to be visited and it returns the target location in the /reason service response.
 
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/reasoner.PNG?raw=true)
+
 ### The `battery` node ###
 This node implements the `battery` state. It is called by the Finite State Machine node through /recharge service request. When it is called, it starts a loading bar animation in order to simulate the recharging procedure.
+
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/battery.PNG?raw=true)
 
 ### The `planner` node ###
 This node implements the `planner` state, which is called by the Moving sub-state machine through a /control action-client request. It takes the current location and the target one and generate a set of via points to connect them.
 
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Planner.PNG?raw=true)
+
 ### The `controller` node ###
 This node implements the `controller` state, which is called through a /plan action-server request. It takes the via points generated and move the robot in the environment.
+
+![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/Controller.PNG?raw=true)
 
 ### 3. Robot and Environment
 For the patrolling, I used a `turtlebot3 robot` equipped with a laser, which is essential for the navigation in order to avoid obstacles. Moreover the robot has an arm equipped with a camera mounted on it, which is used for the markers detection. 
