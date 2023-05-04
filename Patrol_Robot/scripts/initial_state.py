@@ -3,7 +3,7 @@
 """
 .. module:: initial_state
     :platform: Ubuntu 20.04
-    :synopsis: Python code to initialize and load the topology
+    :synopsis: this module initializes and loads the topology
 
 .. moduleauthor:: Martina Germani
 
