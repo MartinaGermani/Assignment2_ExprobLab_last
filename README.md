@@ -72,6 +72,12 @@ Instead, for the navigation, I used the `MoveBase package` of the ROS Navigation
 ![alt text](https://github.com/MartinaGermani/Assignment2_ExprobLab_last/blob/main/images/andamento.png?raw=true)
 
 ### 5. Commented running
+Here I reported a video which shows how the simulation behaves:
+
+[video-del-02-05-2023-22-00-11_yrGmzE2P.webm](https://user-images.githubusercontent.com/91315691/236211804-48da57df-0580-4f26-b957-2485c27c047f.webm)
+
+
+
 
 ### 6. Installation and running procedure
 This architecture runs on ROS noetic and it has been developed with the Docker image, that you can find [here](https://hub.docker.com/repository/docker/carms84/exproblab). 
