@@ -61,6 +61,7 @@ The environment, instead, is the same of the first assignment, so it is composed
 - 7 `doors` (D1, D2, D3, D4, D5, D6);
 - 5 `rooms` (E, R1, R2, R3, R4);
 - 2 `corridors` (C1, C2)
+
 With respect to the simple implementation of the first assignment, here the environment is 3D and it presents also structural obstacles that the robot has to avoid. Moreover there is an additional small room connected to the room E, in which the robot is spawn initially and in which it has to detect the markers in order to load the semantic map before to start the patrolling. 
 
 ### 4. Software Behaviour
